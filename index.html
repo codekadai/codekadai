@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Kadai</title>
+
+    <script>
+        function checkPassword() {
+            var pass = prompt("Enter Password:");
+
+            if (pass === "pass podra") {
+                document.getElementById("pdfSection").style.display = "block";
+                document.getElementById("loginBtn").style.display = "none";
+            } else {
+                alert("Wrong Password!");
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f2f2f2;
+        }
+
+        .btn {
+            display: block;
+            margin: 15px auto;
+            padding: 12px;
+            width: 220px;
+            background: #333;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        #pdfSection {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🔥 Code Kadai</h1>
+
+<button id="loginBtn" onclick="checkPassword()">Enter Password</button>
+
+<div id="pdfSection">
+
+    <a class="btn" href="pdf1.pdf" target="_blank">PDF 1</a>
+    <a class="btn" href="pdf2.pdf" target="_blank">PDF 2</a>
+    <a class="btn" href="pdf3.pdf" target="_blank">PDF 3</a>
+    <a class="btn" href="pdf4.pdf" target="_blank">PDF 4</a>
+    <a class="btn" href="pdf5.pdf" target="_blank">PDF 5</a>
+
+</div>
+
+</body>
+</html>
