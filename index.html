@@ -4,12 +4,12 @@
     <title>Code Kadai</title>
 
     <script>
-        function checkPassword() {
+        function showPDFs() {
             var pass = prompt("Enter Password:");
 
-            if (pass === "1234") {
+            if (pass === "pass podra") {
                 document.getElementById("pdfSection").style.display = "block";
-                document.getElementById("loginBtn").style.display = "none";
+                document.getElementById("practicalBtn").style.display = "none";
             } else {
                 alert("Wrong Password!");
             }
@@ -23,7 +23,18 @@
             background: #f2f2f2;
         }
 
-        .btn {
+        .main-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .pdf-btn {
             display: block;
             margin: 15px auto;
             padding: 12px;
@@ -44,15 +55,17 @@
 
 <h1>🔥 Code Kadai</h1>
 
-<button id="loginBtn" onclick="checkPassword()">Enter Password</button>
+<button id="practicalBtn" class="main-btn" onclick="showPDFs()">
+    Practical
+</button>
 
 <div id="pdfSection">
 
-    <a class="btn" href="python.pdf" target="_blank">Python</a>
-    <a class="btn" href="AOS.pdf" target="_blank">AOS</a>
-    <a class="btn" href="AI.pdf" target="_blank">AI</a>
-    <a class="btn" href="DVT.pdf" target="_blank">DVT</a>
-    <a class="btn" href="IOT.pdf" target="_blank">IOT</a>
+    <a class="pdf-btn" href="python.pdf" target="_blank">Python</a>
+    <a class="pdf-btn" href="AOS.pdf" target="_blank">AOS</a>
+    <a class="pdf-btn" href="AI.pdf" target="_blank">AI</a>
+    <a class="pdf-btn" href="DVT.pdf" target="_blank">DVT</a>
+    <a class="pdf-btn" href="IOT.pdf" target="_blank">IOT</a>
 
 </div>
 
